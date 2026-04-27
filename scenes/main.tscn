@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://vivariummain"]
+
+[ext_resource type="Script" path="res://scripts/main.gd" id="1_main"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_main")
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 280.0
+offset_bottom = 180.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Panel"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 252.0
+offset_bottom = 152.0
+
+[node name="Title" type="Label" parent="CanvasLayer/Panel/VBoxContainer"]
+text = "Vivarium: Ant Prototype"
+
+[node name="Ants" type="Label" parent="CanvasLayer/Panel/VBoxContainer"]
+text = "Ants:"
+
+[node name="Food" type="Label" parent="CanvasLayer/Panel/VBoxContainer"]
+text = "Food:"
+
+[node name="Waste" type="Label" parent="CanvasLayer/Panel/VBoxContainer"]
+text = "Waste:"
+
+[node name="Nutrients" type="Label" parent="CanvasLayer/Panel/VBoxContainer"]
+text = "Nutrients:"
+
+[node name="Tip" type="Label" parent="CanvasLayer/Panel/VBoxContainer"]
+text = ""
+autowrap_mode = 2
